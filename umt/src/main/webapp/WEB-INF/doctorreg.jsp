@@ -18,31 +18,35 @@
 
  jQuery(document).ready(function($){
 	 $("#sform").submit(function(event){
-		 event.preventDefault();
 		 
+	
 			 	 ajp();
 			 	
 			
 	 });
 function ajp(){
-		var da = { };
-		da["name"] = $("#name").val();
-		da["age"] = $("#age").val();
-		da["degree"] = $("#degree").val();
-		da["expertint"] = $("#expertint").val(); 
-		da["password"] = $("#password").val();
-		da["day"] = $("#day").val();
-		da["schedule"] = $("#schedule").val();
-		da["drphone"] = $("#drphone").val();
-		da["msg"] = ("#msg").val();
+		var da = { }
+		da["name"] = $("#nam").val();
+	
+		da["age"] = $("#ag").val();
+		da["degree"] = $("#degre").val();
+		da["expertint"] = $("#expertin").val(); 
+		da["password"] = $("#passwor").val();
+		da["day"] = $("#da").val();
+	
+		da["schedule"] = $("#schedul").val();
+	
+		da["drphone"] = $("#drphon").val();
+		da["msg"] = ("#ms").val();
 		
 			$.ajax({
 			type: "POST",
 			contentType: "application/json",
-			url: "${pageContext.request.contextPath}/docreg",
+			url: "http://localhost:8065/umt/choice/reg",
 			data: JSON.stringify(da),
 			dataType: 'json',
 			success: function(dr){
+				
 				alert("sssss")	;	
 			},
 			error: function(e){
@@ -61,15 +65,15 @@ function ajp(){
 <div>
 <form id="sform" >
 
-<input type="text" name="name"  id="name" />
-<input type="text" name="age"   id="age" />
-<input type="text" name="degree"   id="degree" />
-<input type="text" name="expertint"  id="expertint" />
-<input type="text" name="password"  id="password" />
-<input type="text" name="day"  id="day" />
-<input type="text" name="schedule"  id="schedule" />
-<input type="text" name="msg"  id="msg" />
-<input type="text" name="drphone"  id="drphone" />
+nam:<input type="text"  name="name"  id="nam" />
+age:<input type="text"  name="age"   id="ag" /> <br/>
+dgree:<input type="text"  name="degree"   id="degre" /> <br/>
+<input type="text"  name="expertint"  id="expertin" /> <br/>
+<input type="text" name="password"  id="passwor" /> <br/>
+<input type="text" name="day"  id="da" /> <br/>
+schedule:<input type="text" name="schedule"  id="schedul" /> <br/>
+<input type="text" name="msg"  id="ms" /> <br/>
+<input type="text" name="drphone"  id="drphon" /> <br/>
 <button type="submit" class="btn btn-success btn-md">post</button>
 
 </form>

@@ -9,10 +9,8 @@
 <title>Insert title here</title>
 </head>
 <body style="background-color:brown;">
-<h1> you have successfully registered as a Doctor</h1>
-<h1>go to Homepage to login your account</h1> <br/>
-  <h1>keep in mind yourusername and password to login</h1>
-  
+<h1>Upload your photo to make your profile 100% complete</h1>
+ 
 <a href="${pageContext.request.contextPath}/"><big style="color:green;">Hompage</big></a>
 
 <form action="drphotoupload" method="post" enctype="multipart/form-data">

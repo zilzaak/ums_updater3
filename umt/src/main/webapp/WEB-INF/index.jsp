@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>hey my pussy babe</h1>
+<h1>hey my babe</h1>
 <h1>insert in add_contact</h1>
 
 <form action="${pageContext.request.contextPath}/addcontact" method="get">
@@ -16,7 +16,7 @@ ENTER THE NUMBER OF MEDICINE ITEM:<input type="text" name="totalMedicine" />
 
 </form>
 
-<a href="${pageContext.request.contextPath}/controller2/prescribe/">add_medicine</a>
+<a href="${pageContext.request.contextPath}/prescribe/">add_medicine</a>
 
 </body>
 </html>
