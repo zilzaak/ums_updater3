@@ -1,0 +1,42 @@
+
+#sidebar{
+
+	position:fixed;
+	height:500px;
+     width: 200px;
+     background: #151719;
+right:-200px;
+transition: .6s;
+
+}
+
+#sidebar.active {
+
+	right:0px;
+}
+
+#sidebar ul li{
+
+	color:rgba(255,255,255,0);
+	list-style: none;
+	padding: 20px 20px;
+   border-bottom: 1px solid rgba(255,255,255,0.9);
+
+}
+	
+
+ #sidebar .toggle-btn {
+	position:absolute;
+	right:230px;
+	top:20px;
+
+}
+
+ #sidebar .toggle-btn span {
+
+	display:block;
+	width:30px;
+	height:5px;
+	background: #151719;
+	margin:5px 0px;
+}
